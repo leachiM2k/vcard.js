@@ -1,0 +1,74 @@
+/*     ________________
+      |                |    Default CSS styling for vCard.js
+      |  vCard.js CSS  |    Created by Mattt Thompson, 2008
+      |                |    Released under the MIT License
+       ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅
+*/
+
+
+body{
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+div.vcard{
+  border:1px #ccc solid;
+  width:25em;
+  padding:20px;
+  margin:0 auto;
+}
+
+.fn{
+  font-size:2.0em;
+  font-weight:bold;
+}
+
+
+.fn, .org{
+  display:block;
+}
+
+
+.vcard span.street-address{
+  display:block;
+}
+
+.vcard span.locality:after{
+  content:', ';
+}
+
+.vcard span.region:after{
+  content:' ';
+}
+
+.vcard span.country-name{
+  display:block;
+}
+
+.vcard address, .vcard span.tel, .vcard span.email, .vcard span.url{
+  display:block;
+  clear:left;
+}
+
+.vcard span.type{
+  display:block;
+  float:left;
+  text-align:right;
+  width:3em;
+  margin-right:1em;
+  margin-left:20px;
+  color:#ccc;
+  
+}
+
+.content{
+  float:left;
+}
+
+img{float:right; margin:0 0 10px 10px; max-width:100px; max-height:100px;}
+
+hr{
+  clear:both;
+  margin:10px 0;
+  border:none;
+  border-top:1px #ccc solid;
+}

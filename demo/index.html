@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>vCard.js Demo</title>
+  <script src="../vcard.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>
+  <div id="container" style="margin:10px auto;"></div>
+  <script src="sample.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    var hcard = document.createElement("div");
+    hcard.innerHTML = vCard.initialize($SAMPLE).to_html();
+    document.getElementById('container').appendChild(hcard);
+  </script>
+</body>
+</html>
